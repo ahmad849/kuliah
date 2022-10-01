@@ -1,9 +1,8 @@
 
 package pertemuan_5;
 
-public class Pesan {
+public class Order {
     String nama, gula;
-    Integer harga, qty;
 
     public String getNama() {
         return nama;
@@ -21,7 +20,10 @@ public class Pesan {
         return qty;
     }
 
-    public Pesan(String nama, String gula, Integer harga, Integer qty) {
+    Integer harga, qty;
+
+
+    public Order(String nama, String gula, Integer harga, Integer qty) {
         this.nama = nama;
         this.gula = gula;
         this.harga = harga;
