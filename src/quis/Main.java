@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Main {
     public static void main (String[] args){
         Scanner input = new Scanner(System.in);
-        Mahasiswa mhs = new Mahasiswa(1, "jodghi", 29);
-        SaleOrder so = new SaleOrder(9, mhs, "Biaya Semester Bulanan", 9, 20000);
-        so.printOut();
+        Employee employee = new Employee(1, "jodghi", 29);
+        PayrollEmployee payroll = new PayrollEmployee(9, employee, "Payroll", 90000, 20000);
+        payroll.printOut();
 
     }
 }

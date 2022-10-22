@@ -1,13 +1,13 @@
 package quis;
 
-public class Mahasiswa {
+public class Employee {
 
     private int mhs;
     private String nama;
     private int umur;
 
-    public Mahasiswa(int customerID, String nama, int umur) {
-        this.mhs = customerID;
+    public Employee(int employeeId, String nama, int umur) {
+        this.mhs = employeeId;
         this.nama = nama;
         this.umur = umur;
     }
@@ -20,7 +20,7 @@ public class Mahasiswa {
         return umur;
     }
 
-    public int getCustomerID() {
+    public int getEmployeeId() {
         return mhs;
     }
 
