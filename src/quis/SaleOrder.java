@@ -5,7 +5,7 @@ public class SaleOrder {
 
 
     private int saleId;
-    private Customer customer;
+    private Mahasiswa mhs;
     private String product;
     private int qty;
     private float price;
@@ -14,8 +14,8 @@ public class SaleOrder {
         return saleId;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Mahasiswa getCustomer() {
+        return mhs;
     }
 
     public String getProduct() {
@@ -30,17 +30,17 @@ public class SaleOrder {
         return price;
     }
 
-    public SaleOrder(int saleId, Customer customer, String product, int qty, float price) {
+    public SaleOrder(int saleId, Mahasiswa mhs, String product, int qty, float price) {
         this.saleId = saleId;
-        this.customer = customer;
+        this.mhs = mhs;
         this.product = product;
         this.qty = qty;
         this.price = price;
     }
 
     public void printOut() {
-        System.out.println("Hai " + this.customer.getNama());
-        System.out.println("Berikut adalah pesanan anda . . .");
+        System.out.println("Hai " + this.mhs.getNama());
+        System.out.println("Berikut adalah pembayaran anda . . .");
         System.out.println("Product   : " + this.getProduct());
         System.out.println("Qty       : " + this.getQty());
         System.out.println("Price     : " + this.getPrice());
